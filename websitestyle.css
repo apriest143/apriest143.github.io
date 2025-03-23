@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f4;
+    color: #004d40;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #006653;
+    color: white;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.nav {display: flex;
+    justify-content: center;
+    background-color: #00897b;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional: adds space between the boxes */
+    padding: 20px;
+}
+
+.section2 {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.section3 {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    border-bottom: 2px solid #00897b;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #00897b;
+    padding-bottom: 5px;
+}
+
+/* Image Styling */
+.headshot {
+    float: right;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid #00897b;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+}
+
+.contact a {
+    color: #80cbc4;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.section3 a:hover {
+    background-color: #90EE90;
+}

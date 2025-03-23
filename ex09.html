@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+input {margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px}
+
+
+select {margin-top: 30px}
+
+
+
+
+
+body {background-color: lightgray;
+    color: rgb(0, 0, 183);}
+
+</style>
+
+<body>
+<div>
+    <form action="https://oim-apis.up.railway.app/form2" method="POST">
+        <div class="input">
+        <div>
+            <label for=""
+            >First Name: <input type="text"
+            placeholder = "First Name""
+            name="First Name"
+            /></label>
+        </div>
+        <div>
+            <label for=""
+            >Last Name: <input type="text"
+            name = "Last Name" placeholder = "Last Name"
+        /></label>
+        </div>
+        <div>
+            <label for=""
+            >Email: <input type="text"
+            name = "Email" placeholder = "Email Address"
+        /></label>
+        </div>
+    </div>
+    </form>
+
+    <form action="https://oim-apis.up.railway.app/form2" method="POST">
+    <div class = "select">
+        Gender:
+        <label>Male
+        <input type = "radio" name = "gender" value = "male"/>
+        </label>
+        <label>Female
+        <input type = "radio" name = "gender" value = "Female"/>
+        </label>
+    </div>
+    </form> 
+
+    <form action="https://oim-apis.up.railway.app/form2" method="POST">
+    <div >My Favorite Topics Are:</div>
+    <div>
+        <input type="checkbox" id = "HTML" name ="topics" value="HTML"/>
+        <label for="HMTL">HTML</label>
+    </div>
+    <div>
+        <input type="checkbox" id = "CSS" name ="topics" value="CSS"/>
+        <label for="CSS">CSS</label>
+    </div>
+    <div>
+        <input type="checkbox" id = "JavaScript" name ="topics" value="JavaScript"/>
+        <label for="JavaScript">JavaScript</label>
+    </div>
+    <div> 
+            <label for="expected-grade">Which Grade do you expect?</label>
+            <select name = "grade" id ="expected-grade">
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+    </div>
+    <div>
+        <div>
+        <label for = "comments">Leave a Reply</label>
+        </div>
+        <div>
+            <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="25"
+            placeholder="Leave your reply here"></textarea>
+        </div>
+    </div>
+
+    <button type = "submit">
+        SUBMIT <img src="images/submit.png"
+                        height="30"
+                        alt="submit button"/>
+    </button>
+    <button type = "reset">
+        RESET <img src="images/reset.png"
+                        height="30"
+                        alt="reset button"/>
+    </button>
+</form>
+</div>
+
+</body>
+</html>

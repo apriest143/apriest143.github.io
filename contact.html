@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles/websitestyle.css">
+</head>
+<body>
+    <header class = "header">Contact Me</header>
+
+    <div class="nav">
+        <a href="index-ai.html" target="_blank">Homepage</a>
+        <a href="projects.html" target="_blank">Projects</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </div>
+
+    <div class = "container">
+        <div class="section2">
+            <p>Feel free to reach out using the form below. I'm happy to discuss my projects, answer questions, or explore opportunities together!</p>
+        
+            <form method="POST" action="https://oim.108122.xyz/form2">
+                <fieldset>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="country">Country:</label><br>
+                    <input list="countries" id="country" name="country">
+                    <datalist id="countries">
+                        <option value="United States">
+                        <option value="Canada">
+                        <option value="United Kingdom">
+                    </datalist><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class = "section2">
+            <p style = "font-size: 25px;">Contact Info</p>
+            <ul style = "font-size: 20px; text-align: center;">
+                <li>Personal Email: andy43.priest@gmail.com</li>
+                <li>School Email: apriest1@babson.edu</li>
+                <li>Phone Number: (503)568-5411</li>
+                <li> <a href="https://www.linkedin.com/in/andrew-priest-/" target="_blank">LinkedIn </a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

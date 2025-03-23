@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 08 Table</title>
+    <link rel = "stylesheet" href = "styles/websitestyle.css"/>
+</head>
+<style>
+    caption {background-color: black;
+    color: orange;
+    border: orange dotted 3px;}
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 0 auto;}
+
+    th,td{border: 1px solid black}
+    th {background-color: red;}
+
+    
+    tr:nth-child(odd){
+        background-color: lightblue;}
+        tr:nth-child(even){
+            background-color: orchid;}
+
+</style>
+<body>
+    <table>
+        <caption>
+            Catalogue
+        </caption>
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Description</th>
+                    <th>Price</Pre></th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>0001</td>
+                <td>Basketball</td>
+                <td>$20.99</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>large spork</td>
+                <td>$11.95</td>
+            </tr>
+            <tr>
+                <td>0003</td>
+                <td>Spongebob Bath Mat</td>
+                <td>$25.99</td>
+            </tr>
+            <tr>
+                <td>0004</td>
+                <td>Extra Pulp Orange Juice</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <td>0005</td>
+                <td><a href = "https://www.amazon.com/Bleacher-Creatures-Angeles-Lakers-Lebron/dp/B0DN3P464R/ref=asc_df_B0DN3P464R?mcid=a91ca00e45483f3f83770842920addc7&tag=hyprod-20&linkCode=df0&hvadid=693596868154&hvpos=&hvnetw=g&hvrand=8515527046531955976&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9002079&hvtargid=pla-2396501930842&psc=1" target="_blank"> Lebron James Plush Doll</a></td>
+                <td>$22.99</td>
+            </tr>
+            <tr>
+                <td>0006</td>
+                <td><a href = "https://www.amazon.com/Mr-Peabody-Sherman-Blu-ray-Burrell/dp/B00K1N6GQI" target="_blank"> Mr Peadbody and Sherman Directors Cut Blueray, with additional behind the scenes outtakes and commentary</a></td>
+                <td>$16.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
