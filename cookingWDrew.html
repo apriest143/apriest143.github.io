@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/websitestyle.css">
+    <title>Cooking with Drew!</title>
+</head>
+<body>
+    <div class="header">My Cooking Creations</div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+    </div>
+  
+    <div class="section">
+      <h2>Upload a New Dish</h2>
+      <input type="file" id="imageInput" accept="image/*" /><br><br>
+      <textarea id="captionInput" rows="3" placeholder="Write a short description..."></textarea><br><br>
+      <button onclick="submitDish()">Submit</button>
+    </div>
+  
+    <div class="section">
+      <h2>My Gallery</h2>
+      <div id="gallery" class="container"></div>
+    </div>
+  
+    <script>
+      function submitDish() {
+        const imageInput = document.getElementById('imageInput');
+        const caption = document.getElementById('captionInput').value;
+        const gallery = document.getElementById('gallery');
+  
+        const file = imageInput.files[0];
+        if (!file || !caption) {
+          alert('Please select an image and enter a description.');
+          return;
+        }
+  
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const newCard = document.createElement('div');
+          newCard.className = 'section3';
+          newCard.innerHTML = `
+            <img src="${e.target.result}" alt="Uploaded Dish" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
+            <h3>${caption}</h3>
+          `;
+          gallery.appendChild(newCard);
+          document.getElementById('captionInput').value = '';
+          imageInput.value = '';
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
+  </body>
+  </html>
+  
